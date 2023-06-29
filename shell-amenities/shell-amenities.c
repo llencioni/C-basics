@@ -15,30 +15,41 @@
 
 int main (int argc, char ** argv)
 {
-	printf("\n");
+	/* Blue */
+	printf(__PRINTF_BLUE__ "\n");
 
 	for (int i=1; i<PRINT_QTDE; i++)
-		printf(__PRINTF_BLUE__ "This is Blue ... %d\n", i);
-	printf("\n");
+		printf("This is Blue ... %d\n", i);
+
+	/* Cyan */
+	printf(__PRINTF_CYAN__ "\n");
 
 	for (int i=1; i<PRINT_QTDE; i++)
-		printf(__PRINTF_CYAN__ "This is Cyan ... %d\n", i);
-	printf("\n");
+		printf("This is Cyan ... %d\n", i);
+
+	/* Green */
+	printf(__PRINTF_GREEN__ "\n");
 
 	for (int i=1; i<PRINT_QTDE; i++)
-		printf(__PRINTF_GREEN__ "This is Green ... %d\n", i);
-	printf("\n");
+		printf("This is Green ... %d\n", i);
+
+	/* Magenta */
+	printf(__PRINTF_MAGENTA__ "\n");
 
 	for (int i=1; i<PRINT_QTDE; i++)
-		printf(__PRINTF_MAGENTA__ "This is Magenta ... %d\n", i);
-	printf("\n");
+		printf("This is Magenta ... %d\n", i);
+
+	/* Red */
+	printf(__PRINTF_RED__ "\n");
 
 	for (int i=1; i<PRINT_QTDE; i++)
-		printf(__PRINTF_RED__ "This is Magenta ... %d\n", i);
-	printf("\n");
+		printf("This is Magenta ... %d\n", i);
+	
+	/* White */
+	printf(__PRINTF_WHITE__ "\n");
 
 	for (int i=1; i<PRINT_QTDE; i++)
-		printf(__PRINTF_WHITE__ "This is White ... %d\n", i);
+		printf("This is White ... %d\n", i);
 	printf("\n");
 
 	exit(EXIT_SUCCESS);
