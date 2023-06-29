@@ -13,8 +13,35 @@
 
 #define PRINT_QTDE	(4)
 
-int main (int argc, char ** argv)
+int main (int argc, char *argv[])
 {
+	int i;
+	
+	/***********************************************/
+	/* Command Line Arguments 					   */
+	/***********************************************/
+
+	printf("\nName of the .obj file: %s\n", argv[0]);
+	
+	/* Argument passing treatment */
+	if (argc < 2)
+	{
+        printf("\nNo argument passed through command line!\n");
+    } 
+	else
+	{
+        printf("\nArgument supplied: ");
+        for (i = 1; i < argc; i++)
+		{
+            printf("%s\t", argv[i]);
+        }
+        printf("\n");
+    }
+	
+	/***********************************************/
+	/* Shell Printf Coloring 					   */
+	/***********************************************/
+	
 	/* Blue */
 	printf(__PRINTF_BLUE__ "\n");
 
